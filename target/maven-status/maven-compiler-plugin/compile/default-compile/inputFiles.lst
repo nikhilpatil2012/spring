@@ -1,0 +1,15 @@
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/model/Issue.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/GreetingController.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/service/CandidateService.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/Application.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/TweetHandlers/TweetStorageHandler.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/JsonParser/PplOpinionParser.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/TweetHandlers/SentimentHandler.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/database/InsertPplOpinion.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/controller/ElectionRestController.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/model/CommonStuff.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/test.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/TweetHandlers/TweetHandler.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/model/CustomTweet.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/database/MongoStatic.java
+/Users/deadcode/NetBeansProjects/ui/src/main/java/com/election/model/Candidate.java

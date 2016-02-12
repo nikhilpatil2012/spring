@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="CandidateData">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" ></script>
+  <script type="text/javascript" src="../../javascript/candidate_data.js" ></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+     <div class="jumbotron">
+
+         <div class="row" ng-controller="CandidateCtrl as candidate">
+
+        <div class="col-sm-4">
+          <img ng-src="{{candidate.getImageUrl(candidate.selectedCandidate.id)}}" class="img-rounded" alt="Cinque Terre" width="236" height="236"/>
+        </div>
+
+         <div class="col-sm-4">
+           <p>{{candidate.selectedCandidate.name}}</p>
+           <p>{{candidate.selectedCandidate.occupation}}</p>
+           
+        </div>
+
+      </div>
+
+  </div>
+
+  <div>
+     <section ng-controller = "PanelCtrl as panel">
+
+       <!-- Centered Pills -->
+       <ul class="nav nav-pills nav-justified" >
+
+       <li ng-class = "{active: panel.isSelected(($index+1))}" ng-repeat="i in panel.issues"><a href="" ng-click="panel.setTab(($index+1),i.name)">{{i.name}}</a></li>
+
+       </ul>
+
+       <div class = "panel" ng-show="panel.isSelected(1)">
+         {{panel.currentIssue}}
+       </div>
+       <div class = "panel" ng-show="panel.isSelected(2)">
+          {{panel.currentIssue}}
+       </div>
+       <div class = "panel" ng-show="panel.isSelected(3)">
+          {{panel.currentIssue}}
+       </div>
+       <div class = "panel" ng-show="panel.isSelected(4)">
+          {{panel.currentIssue}}
+       </div>
+       <div class = "panel" ng-show="panel.isSelected(5)">
+          {{panel.currentIssue}}
+       </div>
+       <div class = "panel" ng-show="panel.isSelected(6)">
+         {{panel.currentIssue}}
+       </div>
+       <div class = "panel" ng-show="panel.isSelected(7)">
+          {{panel.currentIssue}}
+       </div>
+
+
+     </section>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="CandidateData">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" ></script>
+  <script type="text/javascript" src="../../javascript/candidate_data.js" ></script>
+ 
+</head>
+<body ng-controller="CandidateCtrl as candidate">
+
+<div class="container">
+
+  <div class="jumbotron">
+    <h1>{{candidate.test}}</h1>
+    <p>Resize this responsive page to see the effect!</p>
+  </div>
+
+  <div class="row">
+
+     <div class="col-sm-4" ng-repeat="c in candidate.data">
+      <a ng-click="candidate.setSelected(c)" href="http://localhost:8080/candidate_page" ><img ng-src="{{candidate.getImageUrl(c.id)}}" class="img-rounded" alt="Cinque Terre" width="236" height="236" /></a>
+      <p>{{c.name}}</p>
+      <p>{{c.occupation}}</p>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

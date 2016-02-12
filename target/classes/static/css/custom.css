@@ -1,0 +1,30 @@
+
+
+ul {
+    display: block;      
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;        
+}
+
+img,section {
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.middle {
+   padding-left: 250px;
+   margin-left: auto;
+   margin-right: auto;    
+}
+
+.ng-dirty.ng-invalid {
+    border-color: red;
+}
+
+
+.ng-dirty.ng-valid {
+    border-color: green;
+}

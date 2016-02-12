@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="Election">
+    <head>
+        <title>Issue Handler</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../css/election.css" />
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" ></script>
+        <script type="text/javascript" src="../../javascript/election.js" ></script>
+
+
+    </head>
+    <body ng-controller="IssueController as issue">
+
+        <div ng-repeat="i in issue.issues">
+
+             {{i.name}}<br/>
+
+        </div>
+
+        <div id="form_div">
+
+          <h1>Issue Handler</h1>
+
+        <form name="issue_form" ng-submit="issue.call()">
+
+            <input name="name" placeholder="Enter Name" type="text" ng-model="issue.name" /><br/>
+            <textarea placeholder="Enter Description" ng-model="issue.description"></textarea><br/>
+            <input type="submit" value="Submit" />
+
+
+        </form>
+
+        </div>
+
+    </body>
+</html>
